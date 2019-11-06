@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  display: inline-table;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  float: left;
+  height: 80px;
+  background: #269be9;
+  padding: 25px 40px 0 40px;
+  margin: 50px 50px 0 0;
+  color: #fff;
+}
+
+nav ul li a:after {
+  content: "";
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #269be9;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul li a:before {
+  content: "";
+  border-bottom: 40px solid #269be9;
+  border-left: 40px solid transparent;
+  border-top: 40px solid #269be9;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  Z-index: 1;
+}
+
+nav ul li:first-child a {
+  border-radius: 10px 0 0 10px;
+}
+
+nav ul li:first-child a:before {
+  display: none;
+}
+
+nav ul li:last-child a {
+  border-radius: 0 10px 10px 0;
+  padding-right: 80px;
+}
+
+nav ul li:last-child a:after {
+  display: none;
+}
+
+nav ul li a:hover {
+  background: #0f0872;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover:after, nav ul li a:focus:after {
+  border-left-color: #0f0872;
+}
+
+nav ul li a:hover:before, nav ul li a:focus:before {
+  border-bottom: 40px solid #0f0872;
+  border-top: 40px solid #0f0872;
+}
+
+nav ul li a:focus {
+  background: #0f0872;
+  color: #fff;
+  text-decoration: none;
+}
