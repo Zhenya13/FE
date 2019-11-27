@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task8.1 Фибоначчи</title>
+</head>
+<body>
+    <script>
+        function fib(n) {
+        let a = 1;
+        let b = 1;
+        for (let i = 3; i <= n; i++) {
+            let c = a + b;
+            a = b;
+            b = c;
+        }
+        return b;
+        }
+
+        alert( fib(0) ); // 2
+        alert( fib(1) ); // 13
+        alert( fib(2) ); // 5527939700884757
+        alert( fib(3) );
+        alert( fib(4) );
+        alert( fib(5) );
+        alert( fib(6) );
+        alert( fib(7) );
+    </script>
+</body>
+</html>
