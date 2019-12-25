@@ -27,7 +27,7 @@ body {
   background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
   background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
   background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
   border-radius: 25px 25px 0 0;
 }
 
@@ -227,16 +227,14 @@ body {
 
 
 
-.yt
-{
+.yt {
   position: fixed;
-  padding:7px 10px 3px 10px;
+  padding: 7px 10px 3px 10px;
   top: 5px;
   right: 5px;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.yt:hover
-{
-  background: rgba(0,0,0,0.2);
+.yt:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
