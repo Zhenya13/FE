@@ -71,11 +71,13 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-nav ul li a:hover:after, nav ul li a:focus:after {
+nav ul li a:hover:after,
+nav ul li a:focus:after {
   border-left-color: #0f0872;
 }
 
-nav ul li a:hover:before, nav ul li a:focus:before {
+nav ul li a:hover:before,
+nav ul li a:focus:before {
   border-bottom: 40px solid #0f0872;
   border-top: 40px solid #0f0872;
 }
