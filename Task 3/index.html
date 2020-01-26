@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>YENHENII</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="images/we.png">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="displayed" src="images/we.png" width="30%" height="" alt="">
+    </a>
+  </header>
+  <div class="container red topBotomBordersOut">
+    <nav>
+      <a href="#pro_sebe">Все про себе та про себе</a>
+      <a href="#vodeo_pro">Відео про мене</a>
+      <a href="#skills_pro">Мої скіли</a>
+      <a href="#contaktna">Контактна форма</a>
+    </nav>
+  </div>
+  <div class="div1">
+    <a name="pro_sebe"><img src="images/photo.JPG" width="30%" alt="Письма мастера дзен" class="round"></a>
+  </div>
+  <div class="div2">
+    <p class="maintext"><b>Євгеній Скрипник</b><br> - молодий та амбіційний хлопець, який знайшов справу свого
+      життя!<wbr>
+      Від посмішки кутиком губ до зустрічі з океаном на іншому кінці світу. Моя історія складається із сотні ваших,<wbr> вона
+      не обмежується лише фотографією.<br>Увага, скоро розіграш фотосесії <time datetime="2019-12-31 23:59">31
+        грудня<wbr></time>.</p>
+    <details>
+      <summary>Наведёт стеклянный глаз, Щёлкнет раз — и помним вас.<wbr>
+        </summary>
+        Фотограф
+    </details>
+
+    <details>
+      <summary>діафрагма</summary>
+      елемент конструкції об'єктива, який відповідає за діаметр отвору пропускає світло на світлочутливу поверхню
+      (плівку, або матрицю).
+    </details>
+    <details>
+      <summary>Витримка</summary>
+      інтервал часу на який відкривається затвор для пропускання світла на світлочутливий елемент.
+    </details>
+    <details>
+      <summary>ISO</summary>
+      це чисто технічне поняття, що означає чутливість матриці (або плівки) до світла. Уявіть загоряють людей на пляжі.
+      Той у кого шкіра більш чутлива загориться швидше, тобто йому треба менше світла для цього. Іншому ж навпаки, треба
+      більше світла, щоб засмагнути, тому, що у нього низька чутливість.
+    </details>
+    <figure>
+      <picture>
+        <img src="images/cat.jpg" width="20%" class="round" alt="фотосесія котів">
+        <figcaption>Замовляйте в мене фотосесію котів</figcaption>
+      </picture>
+    </figure>
+  </div>
+  <a name="vodeo_pro">
+    <h3 class="maintext">Відео про мене: </h3>
+  </a>
+  <div class="aboutme">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Zf78WiCsAM" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video controls width="560" height="315">
+      <source src="images/how_to.mp4" type="video/mp4">
+      <track default kind="captions" srclang="ru" src="images/how_to.mp4" />
+      This browser does not support the HTML5 video element. <a href="images/how_to.mp4">Скачайте видео</a>.
+    </video>
+  </div>
+  <div class="just_c">
+    <a name="skills_pro">
+      <h3 class="maintext">Мої скіли: </h3>
+    </a>
+    <section id="skills">
+      <meter value="30" max="100"></meter><span>JavaScript/jQuery</span>
+      <progress value="80" max="100"></progress><span>HTML5/CSS3</span>
+      <meter value="90" max="100"></meter><span>Photoshop</span>
+      <progress value="30" max="100"></progress><span>Illustrator</span>
+      <meter value="85" max="100"></meter><span>Premiere Pro</span>
+      <progress value="40" max="100"></progress><span>After Effects</span>
+    </section>
+  </div>
+
+  <!-- form -->
+  <form action="#">
+
+    <header>
+      <a name="contaktna">
+        <h2>Форма зворотного зв'язку</h2>
+      </a>
+      <div>Залиште тут ваші контакти</div>
+    </header>
+    <div>
+      <dialog open class="dial">
+        <figure>
+          <figcaption><mark>MIKA - Relax, Take It Easy</mark></figcaption>
+          <audio controls src="images/what.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
+        </figure>
+      </dialog>
+    </div>
+    <canvas id="myCanvas" width="300" height="80" style="border:1px solid #d3d3d3;">
+      Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("+38(068)343-32-85", 10, 50);
+    </script>
+
+    <div>
+      <label class="desc" id="title1" for="Field1">ФІО</label>
+      <div>
+        <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+      </div>
+    </div>
+
+    <div>
+      <label class="desc" id="title3" for="Field3">
+        <bdi>Email</bdi>
+      </label>
+      <div>
+        <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+      </div>
+    </div>
+
+    <div>
+      <label class="desc" id="title4" for="Field4">
+        <bdi>Повідомлення</bdi>
+      </label>
+
+      <div>
+        <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+      </div>
+    </div>
+
+    <div>
+      <fieldset>
+
+        <legend id="title5" class="desc">
+          Що вас цікавить :
+        </legend>
+
+        <div>
+          <input id="radioDefault_5" name="Field5" type="hidden" value="">
+          <div>
+            <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+            <label class="choice" for="Field5_0">Фото</label>
+          </div>
+          <div>
+            <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+            <label class="choice" for="Field5_1">Відео</label>
+          </div>
+          <div>
+            <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+            <label class="choice" for="Field5_2">Фото та Відео</label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend id="title6" class="desc">
+          Яку фотосесію ви хочете:
+        </legend>
+        <div>
+          <div>
+            <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+            <label class="choice" for="Field6">Весільна</label>
+          </div>
+          <div>
+            <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="9">
+            <label class="choice" for="Field7">Love Story</label>
+          </div>
+          <div>
+            <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+            <label class="choice" for="Field8">портретна</label>
+            </span>
+          </div>
+      </fieldset>
+    </div>
+
+    <div>
+      <label class="desc" id="title106" for="Field106">
+        Виберіть спосіб оплати :
+      </label>
+      <div>
+        <select id="Field106" name="Field106" class="field select medium" tabindex="11">
+          <option value="First Choice">картою</option>
+          <option value="Second Choice">готівкою</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <label for="how-m">Скільки буде людей :</label>
+      <input list="how" id="ice-cream-choice" name="how-m" />
+      <datalist id="how">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+      </datalist>
+    </div>
+
+    <div>
+      <div>
+        <input id="saveForm" name="saveForm" type="submit" value="Відправити">
+      </div>
+    </div>
+  </form>
+  <!-- END form -->
+
+  <footer>
+    <a href="https://github.com/Zhenya13" target="_blank">
+      <img src="https://img.icons8.com/color/26/000000/github--v1.png">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100011865159959" target="_blank">
+      <img src="https://img.icons8.com/color/26/000000/linkedin.png">
+    </a>
+    <a href="https://www.linkedin.com/in/eugene-skripnik-039868164/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 48 48"
+        style=" fill:#000000;">
+        <path fill="#3F51B5"
+          d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+        </path>
+        <path fill="#FFF"
+          d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z">
+        </path>
+      </svg>
+    </a>
+  </footer>
+</body>
+
+</html>
