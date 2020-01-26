@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 8.2 Угадайка</title>
+</head>
+<body bgcolor="green" text="black"> 
+    <h1>Угадайка</h1><br>
+   <script>
+     function IsNum(num, a, b)
+     {
+       var ret = true; 
+       if (num == "") ret = false;
+       else 
+         for(var i=0; i<num.length; i++)
+           if(num.charAt(i)<"0" || num.charAt(i)>"9") {ret=false; break;}
+       if (ret) ret = a<=parseInt(num,10) && parseInt(num,10)<=b;
+       return ret;
+     }
+
+     function FindNum()
+     {
+       var a = 1;      
+       var b = 100;     
+       var number = Math.floor(a + (b-a+1)*Math.random());
+       var answer = 0; 
+       var step = 0;   
+       alert ("Задумано число от "+a+" до "+b+". Попробуйте его отгадать!");
+
+       while (answer != number)
+       {
+          answer = prompt("Число в ["+a+" , "+b+"] Ваш ход:", "");
+
+          if (answer == null) break;
+
+          if (IsNum(answer, a, b))
+          {
+            answer = parseInt(answer,10);
+            if      (answer < number)
+               {alert("Ваше число меньше задуманного!"); a = answer;}
+            else if (answer > number)
+               {alert("Ваше число больше задуманного!"); b = answer;}
+            step++;
+          }
+          else
+          {
+            alert ("Ошибка при вводе числа");
+            answer = 0;
+          }
+       }
+       if (answer != null)
+       alert("Поздравляем! Вы за " + step + " попыток угадали число " + number + " !");
+     }
+
+     FindNum()
+
+   </script>
+    <p>
+      Игра закончена!
+    </p>
+</body>
+</html>
